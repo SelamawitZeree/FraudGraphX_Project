@@ -1,0 +1,16 @@
+pandas>=1.5
+numpy
+scikit-learn
+xgboost
+lightgbm
+joblib
+pyarrow
+fastapi
+uvicorn
+streamlit
+matplotlib
+seaborn
+networkx
+node2vec
+shap
+torch

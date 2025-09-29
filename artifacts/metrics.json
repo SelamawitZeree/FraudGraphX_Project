@@ -1,0 +1,39 @@
+{
+  "threshold": 0.5,
+  "val_metrics": {
+    "precision": 0.2857142857142857,
+    "recall": 1.0,
+    "f1": 0.4444444444444444,
+    "min_f1_satisfied": true
+  },
+  "params": {
+    "objective": "binary:logistic",
+    "eval_metric": "logloss",
+    "eta": 0.05,
+    "max_depth": 4,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "min_child_weight": 1.0,
+    "lambda": 1.0,
+    "alpha": 0.0,
+    "scale_pos_weight": 7.0,
+    "verbosity": 1,
+    "nthread": 0
+  },
+  "best_iteration": 142,
+  "features": [
+    "amount",
+    "amount_log",
+    "hour",
+    "weekday",
+    "is_weekend",
+    "user_txn_count_24h",
+    "user_amt_sum_24h",
+    "user_amt_mean_24h",
+    "user_amt_max_24h",
+    "m_amt_mean",
+    "m_amt_max",
+    "m_txn_count"
+  ],
+  "notes": "Threshold chosen on validation set with flexible strategy."
+}
