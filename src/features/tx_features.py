@@ -1,4 +1,5 @@
 import numpy as np, pandas as pd
+# Build simple per-transaction features: log(amount), hour, weekday, weekend flag; return selected core fields.
 def tx_basic(df: pd.DataFrame)->pd.DataFrame:
     x=df.copy()
     x['amount_log']=np.log1p(x['amount'])

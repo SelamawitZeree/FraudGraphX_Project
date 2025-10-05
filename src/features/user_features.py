@@ -1,4 +1,5 @@
 import pandas as pd
+# For each transaction, compute the card’s rolling 24-hour transaction count and amount stats (sum/mean/max).
 def user_roll(df: pd.DataFrame)->pd.DataFrame:
     outs=[]
     for cid,g in df.sort_values('timestamp').groupby('card_id'):

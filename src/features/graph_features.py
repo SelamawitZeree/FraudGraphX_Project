@@ -1,4 +1,5 @@
 import pandas as pd
+# For each transaction, add historical fraud rates for its merchant and device.
 def neighbor_fraud_ratio(df: pd.DataFrame)->pd.DataFrame:
     m=df.groupby('merchant_id')['fraud'].mean().rename('merchant_fraud_rate').reset_index()
     d=df.groupby('device_id')['fraud'].mean().rename('device_fraud_rate').reset_index()

@@ -4,6 +4,9 @@ from .tx_features import tx_basic
 from .user_features import user_roll
 from .merchant_features import merchant_agg
 from .graph_features import neighbor_fraud_ratio
+# Entry point: read input parquet,
+# build tx/user/merchant/graph features,
+# merge by transaction_id, fill missing with 0, and save to --out.
 if __name__=='__main__':
     ap=argparse.ArgumentParser()
     ap.add_argument('--input', required=True); ap.add_argument('--out', required=True)
