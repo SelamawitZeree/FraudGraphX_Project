@@ -1,10 +1,10 @@
-# FraudGraphX — Presentation Kit (CPU)
+# FraudGraphX 
 
 **Dataset:** `data/raw/MOCK_DATA.csv`
 
 ## Quick Start
 ```bash
-python -m venv .venv && source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 python -m src.data.preprocess --input data/raw/MOCK_DATA.csv --out data/processed/transactions.parquet
@@ -66,4 +66,4 @@ python -m src.visual.heatmap \
 streamlit run src/visual/dashboard_streamlit.py
 
 # optional API
-uvicorn src.serve.app_fastapi:app --reload# FraudGraphX_Project
+uvicorn src.serve.app_fastapi:app --reload

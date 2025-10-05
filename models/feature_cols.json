@@ -1,0 +1,1 @@
+["amount", "amount_log", "hour", "weekday", "is_weekend", "user_txn_count_24h", "user_amt_sum_24h", "user_amt_mean_24h", "user_amt_max_24h", "m_amt_mean", "m_amt_max", "m_txn_count", "merchant_fraud_rate", "device_fraud_rate", "ae_anomaly"]

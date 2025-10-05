@@ -2,7 +2,5 @@ __pycache__/
 *.pyc
 .venv/
 .ipynb_checkpoints/
-data/raw/
-data/processed/
-models/
-reports/
+.idea
+.ds_store
